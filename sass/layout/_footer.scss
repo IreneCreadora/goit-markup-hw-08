@@ -1,0 +1,103 @@
+.footer {
+    background-color: var(--bg-accent-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contacts {
+    margin-top: 20px;
+} 
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-accent-color);
+    text-decoration: none;
+
+    transition-property: color , border-color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function:var(--animation-timing-function);
+    &:hover, &:focus {
+        color: var(--accent-color);
+    } 
+}
+.contacts--footer {
+    display: flex;
+    margin-top: 9px;
+    color: var(--secondary-text-color);
+}
+.join {
+    margin-left: 70px;
+}
+.footer-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-accent-color);
+}
+
+
+.footer-form-div {
+margin-left: auto;
+}
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--bg-accent-color);
+    padding-left: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--white-text-color);
+    
+    transform: border-color var(--animation-duration) var(--animation-timing-function);
+    &:hover , &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.subscribe-btn {
+width: 200px;
+height: 50px;
+margin-left: 12px;
+margin-right: 0px;
+
+background: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+letter-spacing: 0.06em;
+color: var(--white-text-color);
+
+transform: background-color var(--animation-duration) var(--animation-timing-function);
+    &:hover, &:focus {
+    background-color: #188CE8;
+    }
+}
+.subscribe-icon {
+margin-left: 10px;
+}
