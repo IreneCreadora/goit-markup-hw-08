@@ -1,18 +1,37 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.portfolio-nav__item {
-    display: block;
-    &:nth-child(n+2) {
-        margin-left: 8px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @include desktop {
+        padding-bottom: 94px;
+        padding-top: 94px;
     }
-} 
-.portfolio-nav {
-    display: flex; 
-    margin-bottom: 50px;
-    justify-content: center;
 }
+
+.portfolio-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    @include tablet{
+        justify-content: center;
+    }
+    @media screen and (max-width:767px){
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px){
+        margin-bottom: 50px;
+    }
+}
+.portfolio-nav__item{
+}
+// .portfolio-nav__item {
+//     display: block;
+//     &:nth-child(n+2) {
+//         margin-left: 8px;
+//     }
+// }
 
 .portfolio-nav__btn {
     font-family: inherit;
@@ -42,25 +61,36 @@
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .portfolio__item {
-    display: flex;
-    margin-left: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 100%;
+    @include tablet {
+        width: calc((100% - 30px) /2);
+    }
+    @include desktop {
+        width: calc((100% - 60px) /3);
+    }
+
     transition-property: box-shadow;
     transition-duration: var(--animation-duration);
     transition-timing-function:var(--animation-timing-function);
-    &:nth-child(3n+0){
-        margin-right: 0px;
-        margin-left: 0;
-    }
-    &:nth-last-child(-n + 3){
-        margin-bottom: 0;
-    }
 }
+
+    // display: flex;
+    // margin-left: 0;
+    // margin-right: 30px;
+    // margin-bottom: 30px;
+        // &:nth-child(3n+0){
+    //     margin-right: 0px;
+    //     margin-left: 0;
+    // }
+    // &:nth-last-child(-n + 3){
+    //     margin-bottom: 0;
+    // 
 .portfolio__card {
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -84,7 +114,8 @@
 }
 
 .portfolio__thumb {
-    display: block;
+    // display: block;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }

@@ -1,14 +1,12 @@
 .socials {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
 }
 .socials__item {
     width: 44px;
     height: 44px;
-    margin-right: 10px;
-    &:nth-child(n+2) {
-        margin-left: 10px;
-    }
 }
 .socials__link {
     width: 100%;
