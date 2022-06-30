@@ -226,11 +226,12 @@
         </ul></div>
     </section>
     </main>
-    <!-- <footer class="footer">
-        <div class="container footer-flex">
-            <div class="footer-container">
-            <a href="./index.html" class="logo logo--light logo__footer"><span class="logo__span">Web</span>Studio</a>
-            <address>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="./index.html" class="logo logo--light logo__footer"><span class="logo__span">Web</span>Studio</a>
+                <address>
                 <ul class="footer-contacts">
                     <li><a href="https://goo.gl/maps/pPcLnvjaUrZ2ZYLMA" 
                         target="_blank" 
@@ -240,38 +241,42 @@
                     <li><a href="mailto:info@example.com" class="address contacts--footer">info@example.com</a></li>
                     <li><a href="tel:+380991111111" class="address contacts--footer">+38 099 111 11 11</a></li>
                 </ul>
-            </address> </div>
-            <div class="join">
-            <p class="footer-title">Присоединяйтесь</p>
-            <ul class="socials">
-                <li class="socials__item"><a href="" class="socials__link icon--footer-style ">
-                    <svg class="socials__icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-instagram">
-                    </use></svg></a></li>
-                <li class="socials__item"><a href="" class="socials__link icon--footer-style ">
-                    <svg class="socials__icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-twitter">
-                    </use></svg></a></li>
-                <li class="socials__item"><a href="" class="socials__link icon--footer-style ">
-                    <svg class="socials__icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-facebook">
-                    </use></svg></a></li>
-                <li class="socials__item"><a href="" class="socials__link icon--footer-style ">
-                    <svg class="socials__icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-linkedin">
-                    </use></svg></a></li>
-            </ul></div>
-            <div class="footer-form-div">
-                <p class="footer-title">Подпишитесь на рассылку</p>
-                <form action="" class="subscribe-form">
-                    <label> <input type="email" name="subscribe-email" class="subscribe-input" placeholder="E-mail" required></label>
-                    <button type="submit" class="subscribe-btn">Подписаться<svg class="subscribe-icon" width="24" height="24">
-                        <use href="./images/symbol-defs.svg#icon-footer-send">
-                        </use></svg></button>
-                </form>
-            </div>
-        </div>
-    </footer> -->
+            </address>
+                </li>
+                
+            <li class="footer__item">
+                <p class="footer-title">Присоединяйтесь</p>
+                <ul class="socials">
+                    <li class="socials__item"><a href="" class="socials__link icon--footer-style ">
+                        <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram">
+                        </use></svg></a></li>
+                    <li class="socials__item"><a href="" class="socials__link icon--footer-style ">
+                        <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-twitter">
+                        </use></svg></a></li>
+                    <li class="socials__item"><a href="" class="socials__link icon--footer-style ">
+                        <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook">
+                        </use></svg></a></li>
+                    <li class="socials__item"><a href="" class="socials__link icon--footer-style ">
+                        <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin">
+                        </use></svg></a></li>
+                </ul>
+            </li>
+            <li class="footer__item">
+                    <p class="footer-title">Подпишитесь на рассылку</p>
+                    <form action="" class="subscribe-form">
+                        <label><input type="email" name="subscribe-email" class="subscribe-input" placeholder="E-mail" required></label>
+                        <button type="submit" class="subscribe-btn">Подписаться<svg class="subscribe-icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-footer-send">
+                            </use></svg></button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </footer>
     <div class="backdrop is-hidden" data-modal> 
         <div class="modal">
             <button class="close-btn" data-modal-close><svg class="icon-close" width="18" height="18">
@@ -307,7 +312,6 @@
                         <a href="" class="agreement-link">Условия договора</a></label></div>
                     <button type="submit" class="submit">Отправить</button>
                 </form>
-            </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
