@@ -3,20 +3,39 @@
 }
 .logo__header {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include tablet {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    }
+}
+.menu-open-btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+    @include tablet {
+        display: none;
+    }
 }
 .nav {
     display: flex;
     align-items: center;
 }
 .nav__list {
+display: none;
+    @include tablet {
     display: flex;
 }
-// .nav-item {
+}
 
-// }
 .nav__item:nth-child(n+2) {
     margin-left: 50px;
 }
