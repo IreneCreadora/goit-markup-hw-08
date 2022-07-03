@@ -56,14 +56,16 @@
         color: var(--accent-color);
     } 
 }
-.contacts--footer {
+
+.footer__contacts__item {
     margin-top: 8px;
-    color: var(--secondary-text-color);
     @include desktop {
         margin-top: 9px;
     }
 }
-
+.contacts--footer {
+    color: rgba(255, 255, 255, 0.6);
+}
 .footer-title {
     margin-bottom: 20px;
     width: 100%;
